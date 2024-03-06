@@ -12,6 +12,6 @@ site HTML desenvolvido para entrega de atividade, da fase 1
 * Disponibilidade de material auxiliar (video); <br>
 * Linguagem de fácil entendimento; <br>
 * Layout simples; <br>
-*
+* 3 abas: home, sobre e contato
 *
 *
