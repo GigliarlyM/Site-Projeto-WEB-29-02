@@ -1,9 +1,11 @@
 # Site-Html-29-02
 site HTML desenvolvido para entrega de atividade, da fase 1
 
-Logo: 👨‍💻👍
+Logo:
 
-Nome do site: positive mensage
+<img src="/logo/logo.png" width="200px"/>
+
+Nome do site: positive message
 
 Objetivo: Ensinar para jovens sobre área da programação, que tenham nenhum conhecimento ou pouco contato com tecnologia
 
