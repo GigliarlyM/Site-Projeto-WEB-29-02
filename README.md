@@ -1,6 +1,10 @@
 # Site-Html-29-02
 site HTML desenvolvido para entrega de atividade, da fase 1
 
+Logo: 👨‍💻👍
+
+Nome do site: positive mensage
+
 Objetivo: Ensinar para jovens sobre área da programação, que tenham nenhum conhecimento ou pouco contato com tecnologia
 
 Conteúdo: Ensinar como fazer uma locadora de filmes
