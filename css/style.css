@@ -4,12 +4,17 @@
 }
 
 body{
-    background-color: rgb(24, 112, 171);
+    background-image: url("../imagens/background.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    
 }
 
 header {
-    background: linear-gradient(rgb(0, 110, 255), rgb(24, 112, 171));
+    background: rgba(0, 102, 255, 0.6);
     display: flex;
+    color: white;
     flex-direction: row;
     justify-content: space-between;
     padding: 5px 100px;
@@ -29,6 +34,25 @@ header nav {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    /* border: solid 1px red;
-    margin-top: 70px; */
+  
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(240, 237, 237);
+}
+
+section {
+    background-color: rgba(221, 218, 218, 0.781);
+    margin: 0px 40px;
+    color: rgb(17, 17, 17);
+}
+
+section ol {
+    margin-left: 30px;
+}
+
+section article{
+    margin-top: 20px;
+    text-align: left;
 }
