@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(11, 11, 11);
+    color: white;
+    color: rgb(220, 220, 220);
+    font-family: "Rowdies", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    transform: translate(10px, 10px);
+    margin-top: 0%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    align-items: center;
+    text-size-adjust: center;
+
+}
+
+.margin-30px {
+    margin: 30px 0;
+}
+
+.margin-40px {
+    margin: 40px 0;
+}
+
+.margin-70px{
+    margin: 70px 0;
+}
+
+.margin-50px {
+    margin: 50px 0;
+}
+
+.margin-80px{
+    margin: 80px 0;
+}
+
+
+.textao a {
+    color: rgb(0, 0, 0);
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+
+
+    border: 5px solid blue;
+    border-radius: 50px;
+    background-color: white;
+
+}
+
+.topo {
+
+    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
+}
+
+.topo a {
+    color: rgb(190, 190, 190);
+    padding: 10px 20px;
+    float: left;
+    display: block;
+    text-decoration: none;
+
+}
+
+.red {
+    color: red;
+
+}
+
+.orange {
+    color: orange;
+
+}
+
+.dark-blue {
+    color: rgb(0, 0, 180);
+}
+
+.blue {
+    color: blue;
+}
+
+
+.tabela1 {
+    align-items: center;
+}
+
+.opção {
+    color: brown;
+}
+
+.while {
+    color: green;
+}
+
+.lista {
+    color: orange;
+}
+
+.for {
+    color: green;
+}

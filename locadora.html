@@ -1,156 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
-
-
-
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <style>
-
-    .textao{
-        color: rgb(190,190,190);
-        font-family: "Rowdies", sans-serif;
-        font-weight: 300;
-        font-style: normal;
-        
-        transform: translate(10px, 10px);
-        margin-top: 0%;
-        margin-bottom: 5%;
-        margin-left: 15%;
-        margin-right: 15%;
-
-
-        align-items: center ;
-        text-size-adjust: center;
-
-
-    }
-
-    .topo{
-        overflow: hidden;
-        user-select: none;
-        cursor: pointer;
-
-    }
-
-    .topo a{
-            color: rgb(190,190,190);
-            padding: 10px 20px;
-            float: left;
-            display: block;
-            text-decoration: none;
-
-
-    }
-
-
-    .opção{
-        color: brown;
-    }
-
-    .while{
-        color: green;
-    }
-
-    .lista{
-        color: orange;
-    }
-
-    .for{
-        color: green;
-    }
-
-    
-
-
-
-
-    </style>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Positive Message</title>
 
 </head>
-<body style="background-color: rgb(11, 11, 11);">
+
+<body>
+
+    <header>
+        <nav>
+            <div class="topo">
+                <a href="index.html">Home</a>
+                <a href="introducao.html">Introdução</a>
+                <a href="locadora.html">Locadora</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </nav>
+    </header>
 
     <div class="textao">
 
-    <div class="topo">
-    <a href="index.html">início</a>
-    <a href="intrdução.html">Página Anterior</a>
+        <hr>
+        <h2 style="color: rgb(0, 136, 255);">Introdução da locadora</h2>
+        <p>Agora você vai aprender como estruturamos nossa locadora:</p>
+
+        <p>Começamos definindo uma variável <span class="opção">opção</span> valor 1, ela será necessária para o
+            funcionamento <span class="while">While</span>.
+
+        <p>Criamos também uma lista chamada <span class="lista">listaFilme</span> é nela que nossos filmes serão
+            armazenados.</p>
+
+        <p>Aqui está o <span class="while">While</span>, enquanto a variável <span class="opção">opção</span> for
+            diferente de 5, nosso programa continuará execuntando, contudo se digitado número 5,saímos do programa.</p>
+
+        <p>Printamos nosso menu (\n serve para pular a linha).</p>
+
+        <p>Variável <span class="opção">opção</span> recebe um input(entrada), o usuário precisa informar algum valor
+            numérico.</p>
+
+        <br>
+
+        <h2 style="color: rgb(0, 136, 255)">Funcionalidades</h2>
+        <p>Vamos falar também sobre as funcionalidades do nosso programa:</p>
+
+        <h3 style="color: rgb(0, 92, 230)">Opção 1</h3>
+        <h4 style="color: rgb(0, 74, 184)">Opção 1 lista todos os filmes encontrados na lista</h4>
+
+        <p>Criamos um <span class="for">for</span> e ele é responsável por trazer todos os itens colocados na
+            listaFilmes, logo ápos, printamos os filmes.</mark></p>
+        <br>
+
+
+        <h3 style="color: rgb(0, 92, 230)">Opção2</h3>
+        <h4 style="color: rgb(0, 74, 184);">Adiciona um novo filme na lista</h4>
+
+        <p>A variável novofilme recebe um filme digitado pelo usuário.</p>
+        <p>A funcionalidade .append(), adiciona o elemento na lista.</p>
+        <p>Printamos uma mensagem.</p>
+        <br>
+
+
+        <h3 style="color: rgb(0, 92, 230);">Opção 3</h3>
+        <h4 style="color: rgb(0, 74, 184)">Remove um filme da lista</h4>
+
+        <p>A variável removerFilme recebe o nome de um filme digitado pelo usuário.</p>
+        <p>É verificado se existe o filme na lista, para então removê-lo e printar uma mensagem.</p>
+        <p></p>Se não existir o filme digitado, uma mensagem de aviso é exibida.</p>
+        <br>
+
+
+        <h3 style="color: rgb(0, 92, 230);">Opção 4</h3>
+        <h4 style="color: rgb(0, 74, 184)">Pesquisa um filme na lista</h4>
+
+        <p>A variável pesquisarFilmes recebe o nome de um filme digitado pelo ususario.</p>
+        <p>É verificado se o filme pesquisado consta na lista, para exibí-lo.</p>
+        <p>Se o filme pesquisado não for encontrado, uma mensagem de aviso é exibida.</p>
+        <br>
+
+
+        <h3 style="color: rgb(0, 92, 230);">Opção 5</h3>
+        <h4 style="color: rgb(0, 74, 184)">O programa é finalizado</h4>
+        <p>Ao digitar o número 5, o <span class="while">While</span> é interrompido e o programa é finalizado com uma
+            mnensagem.</p>
+        <br>
+
+
+        <h3 style="color: rgb(0, 92, 230);">Exceção</h3>
+        <p>Se um número digitado pelo usuario não estiver dentre as opções fornecidas pelo programa uma <br>mensagem de
+            aviso é exibida.</p>
     </div>
 
-    <hr>
-    <h2 style="color: rgb(0, 136, 255);">Introdução</h2> 
-    <p>Agora você vai aprender como estruturamos nossa locadora:</p>
-    
-    <p>Começamos definindo uma variável <span class="opção">opção</span> valor 1, ela será necessária para o funcionamento <span class="while">While</span>.
-    
-    <p>Criamos também uma lista chamada <span class="lista">listaFilme</span> é nela que nossos filmes serão armazenados.</p>
-    
-    <p>Aqui está o <span class="while">While</span>, enquanto a variável <span class="opção">opção</span> for diferente de 5, nosso programa continuará execuntando, contudo se digitado número 5,saímos do programa.</p>
-    
-    <p>Printamos nosso menu (\n serve para pular a linha).</p>
-
-    <p>Variável <span class="opção">opção</span> recebe um input(entrada), o usuário precisa informar algum valor numérico.</p>
-    
-    <br>
-    
-    <h2 style="color: rgb(0, 136, 255)">Funcionalidades</h2>
-    <p>Vamos falar também sobre as funcionalidades do nosso programa:</p>
-
-    <h3 style="color: rgb(0, 92, 230)">Opção 1</h3>
-    <h4 style="color: rgb(0, 74, 184)">Opção 1 lista todos os filmes encontrados na lista</h4>
-
-    <p>Criamos um <span class="for">for</span> e ele é responsável por trazer todos os itens colocados na listaFilmes, logo ápos, printamos os filmes.</mark></p>
-    <br>
-
-    
-    <h3 style="color: rgb(0, 92, 230)">Opção2</h3>
-    <h4 style="color: rgb(0, 74, 184);">Adiciona um novo filme na lista</h4>
-    
-    <p>A variável novofilme recebe um filme digitado pelo usuário.</p>
-    <p>A funcionalidade .append(), adiciona o elemento na lista.</p>
-    <p>Printamos uma mensagem.</p>
-    <br>
-
-
-    <h3 style="color: rgb(0, 92, 230);">Opção 3</h3>
-    <h4 style="color: rgb(0, 74, 184)">Remove um filme da lista</h4>
-
-    <p>A variável removerFilme recebe o nome de um filme digitado pelo usuário.</p>
-    <p>É verificado se existe o filme na lista, para então removê-lo e printar uma mensagem.</p>
-    <p></p>Se não existir o filme digitado, uma mensagem de aviso é exibida.</p>
-    <br>
-
-  
-    <h3 style="color: rgb(0, 92, 230);">Opção 4</h3>
-    <h4 style="color: rgb(0, 74, 184)">Pesquisa um filme na lista</h4>
-
-    <p>A variável pesquisarFilmes recebe o nome de um filme digitado pelo ususario.</p>
-    <p>É verificado se o filme pesquisado consta na lista, para exibí-lo.</p>
-    <p>Se o filme pesquisado não for encontrado, uma mensagem de aviso é exibida.</p>
-    <br>
-
-     
-    <h3 style="color: rgb(0, 92, 230);">Opção 5</h3>
-    <h4 style="color: rgb(0, 74, 184)">O programa é finalizado</h4>
-    <p>Ao digitar o número 5, o <span class="while">While</span> é interrompido e o programa é finalizado com uma mnensagem.</p>
-    <br>
-
-      
-    <h3 style="color: rgb(0, 92, 230);">Exceção</h3>
-    <p>Se um número digitado pelo usuario não estiver dentre as opções fornecidas pelo programa uma <br>mensagem de aviso é exibida.</p>
-    </div>
-
-    
-    
-
-    
-    
 </body>
+
 </html>
