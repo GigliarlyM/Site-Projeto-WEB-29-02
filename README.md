@@ -3,7 +3,7 @@ site HTML desenvolvido para entrega de atividade, da fase 1
 
 Logo:
 
-<img src="/imagens/logo.png" width="200px"/>
+<img src="master/img/logo.png" width="200px"/>
 
 Nome do site: positive message
 
