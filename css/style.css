@@ -2,8 +2,7 @@ body {
     background-color: rgb(56, 56, 56);
     color: rgb(220, 220, 220);
     font-family: "Rowdies", sans-serif;
-    font-weight: 50;
-    font-style: normal;
+    font-weight: 100;
     transform: translate(10px, 0);
     margin-top: 0%;
     margin-bottom: 5%;
@@ -13,10 +12,42 @@ body {
     text-size-adjust: center;
 }
 
+.logo {
+    margin-left: -50px;
+}
+
+.logo p {
+    margin: 0 -25px;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(43, 141, 226);
+}
+
 header {
-    top: 0;
-    position: sticky;
     background-color: rgb(56, 56, 56);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 0px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav a {
+    color: rgb(43, 141, 226);
+    padding-left: 20px;
+    content: '';
+    position: relative;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(163, 203, 238);
 }
 
 .align-center {
@@ -43,6 +74,10 @@ header {
     margin: 80px 0;
 }
 
+.margin-top-80px {
+    margin-top: 80px;
+}
+
 
 .textao a {
     color: rgb(0, 0, 0);
@@ -54,22 +89,6 @@ header {
     border: 5px solid blue;
     border-radius: 50px;
     background-color: white;
-
-}
-
-.topo {
-
-    overflow: hidden;
-    user-select: none;
-    cursor: pointer;
-}
-
-.topo a {
-    color: rgb(190, 190, 190);
-    padding: 10px 20px;
-    float: left;
-    display: block;
-    text-decoration: none;
 
 }
 
@@ -141,7 +160,7 @@ form {
     color: white;
     border-radius: 10px;
     display: block;
-    width: 70px;
+    width: fit-content;
     margin: 0 auto;
 }
 
