@@ -18,7 +18,7 @@
 
     <header>
         <div class="logo">
-            <a href=""><img src="img/logo.png" alt="" width="40px"></a>
+            <a href="index.html"><img src="img/logo.png" alt="" width="40px"></a>
             <p>Positive Message</p>
 
         </div>
@@ -30,29 +30,67 @@
         </nav>
     </header>
 
+
+    <section class="margin-70px">
+        <h1 class="align-center">Nossos contatos:</h1>
+        <table class="contact-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Daniel</td>
+                    <td>daniel@gmail.com</td>
+                    <td>(83)98720-9981</td>
+                </tr>
+                <tr>
+                    <td>Gigliary </td>
+                    <td>gigliary@gmail.com</td>
+                    <td>(83)9634-4276</td>
+                </tr>
+                <tr>
+                    <td>Pedro Lucas</td>
+                    <td>pedro@gmail.com</td>
+                    <td>(83) 9120-2525</td>
+                </tr>
+                <tr>
+                    <td>Jefferson Ezequiel</td>
+                    <td>ezequiel@gmail.com</td>
+                    <td>(83) 99873-2952</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
     <section>
-        <form action="">
-            <p class="orange">Avalie nosso contéudo:</p>
+        <form action="https://formsubmit.co/facisadev@gmail.com" method="post">
+            <p class="light-blue">Avalie nosso contéudo:</p>
             <label for="inputName">Seu nome:</label>
-            <input id="inputName" type="text">
+            <input id="inputName" type="text" name="name" placeholder="Digite seu nome" required>
 
             <br>
             <label for="inputEmail">Seu email:</label>
-            <input id="inputEmail" type="email">
+            <input id="inputEmail" type="email" name="email" placeholder="Digite seu email" required>
 
             <br>
             <label for="inputRadio">Sua avaliação:</label>
-            <input id="inputRadio" name="avaliacao" type="radio"> 1
-            <input id="inputRadio" name="avaliacao" type="radio"> 2
-            <input id="inputRadio" name="avaliacao" type="radio"> 3
-            <input id="inputRadio" name="avaliacao" type="radio"> 4
-            <input id="inputRadio" name="avaliacao" type="radio"> 5
+            <input id="inputRadio" name="avaliacao" type="radio" value="1"> 1
+            <input id="inputRadio" name="avaliacao" type="radio" value="2"> 2
+            <input id="inputRadio" name="avaliacao" type="radio" value="3"> 3
+            <input id="inputRadio" name="avaliacao" type="radio" value="4"> 4
+            <input id="inputRadio" name="avaliacao" type="radio" value="5" required> 5
 
             <br>
             <br>
             <button type="submit">Enviar avaliação</button>
         </form>
     </section>
+
+
 
     <footer>Positive Message&copy; 2024 | &reg; Todos direitos reservados</footer>
 </body>

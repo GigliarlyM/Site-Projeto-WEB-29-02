@@ -167,3 +167,26 @@ form {
 .button:hover {
     background-color: rgb(9, 89, 160);
 }
+
+.contact-table {
+    cursor: default;
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:hover {
+        background-color: rgb(134, 129, 129);
+    }
+
+    th {
+        background-color: rgb(19, 115, 199);
+        color: white;
+    }
+
+}
