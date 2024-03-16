@@ -1,0 +1,10 @@
+- html, css, JS
+
+- é responsivo (mobile/pc)
+
+- visual simples mas funcional
+
+- pelo whatsapp é gerado link para acesso ao site, para realização de pedidos, salva o historico
+
+- apresenta o mesmo erro 2 vezes: nao foi possivel ler propriedades nulo
+
