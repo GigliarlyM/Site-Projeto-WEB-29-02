@@ -205,3 +205,21 @@ audio {
     margin-bottom: 20px;
     margin-top: 5px;
 }
+
+@media only screen and (max-device-width: 1200px) {
+    iframe {
+        width: 80%;
+    }
+
+    .image {
+        width: 80%;
+    }
+
+    .image-locadora {
+        width: 110%;
+    }
+
+    .logo {
+        margin-left: -100px;
+    }
+}
