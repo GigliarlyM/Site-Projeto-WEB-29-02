@@ -78,19 +78,10 @@ nav a:hover {
     margin-top: 80px;
 }
 
-
-.textao a {
-    color: rgb(0, 0, 0);
-    user-select: none;
-    cursor: pointer;
-    text-decoration: none;
-
-
-    border: 5px solid blue;
-    border-radius: 50px;
-    background-color: white;
-
+.margin-b-80px{
+    margin-bottom: 80px;
 }
+
 
 .red {
     color: rgb(226, 58, 58);
@@ -169,8 +160,9 @@ form {
 }
 
 .contact-table {
+    margin: auto;
     cursor: default;
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
 
     th,
@@ -191,6 +183,12 @@ form {
 
 }
 
+.ul-list{
+    display: grid;
+    justify-content: center;
+    margin-right: 50px;
+}
+
 iframe {
     margin: 0 auto;
     text-align: center;
@@ -206,20 +204,24 @@ audio {
     margin-top: 5px;
 }
 
-@media only screen and (max-device-width: 1200px) {
+@media (max-width: 700px) {
     iframe {
-        width: 80%;
+        width: 90%;
     }
 
     .image {
-        width: 80%;
-    }
-
-    .image-locadora {
-        width: 110%;
+        width: 100%;
     }
 
     .logo {
         margin-left: -100px;
+    }
+
+    audio{
+        width: 80%;
+    }
+
+    .contact-table{
+        width: 50%;
     }
 }
