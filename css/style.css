@@ -107,7 +107,9 @@ nav a:hover {
 
 
 .tabela1 {
-    align-items: center;
+    display: table;
+    margin: 70px auto;
+    text-align: center;
 }
 
 .brown {
@@ -204,7 +206,17 @@ audio {
     margin-top: 5px;
 }
 
-@media (max-width: 700px) {
+
+
+@media (max-width:960px) {
+    .contact-table{
+        width: 80%;
+        font-size: 80%;   
+    }
+}
+
+
+@media (max-width: 750px) {
     iframe {
         width: 90%;
     }
@@ -213,15 +225,25 @@ audio {
         width: 100%;
     }
 
-    .logo {
-        margin-left: -100px;
-    }
-
     audio{
         width: 80%;
     }
 
     .contact-table{
         width: 50%;
+        font-size: 70%;
+        
+    }
+}
+
+@media (max-width: 340px) {
+    .contact-table{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 270px) {
+    .contact-table{
+        font-size: 10%;
     }
 }
