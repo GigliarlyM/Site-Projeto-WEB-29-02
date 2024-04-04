@@ -51,6 +51,10 @@ nav a:hover {
     color: rgb(163, 203, 238);
 }
 
+nav a:active{
+    color: rgb(15, 96, 167);
+}
+
 .align-center {
     text-align: center;
 }
@@ -168,7 +172,7 @@ form {
     display: none;
 }
 
-.contact-table {
+#contact-table {
     margin: auto;
     cursor: default;
     width: 80%;
@@ -255,15 +259,14 @@ audio {
     
     #check:checked ~ nav a {
         margin: 10px 0;
-        gap: 1px;
         font-size: 17px;
         padding-left: 0;
         width: fit-content;
     }
 
 
-    .contact-table{
-        width: 80%;
+    #contact-table{
+    width: 80%;
         font-size: 80%;   
     }
 }
@@ -282,8 +285,8 @@ audio {
         width: 80%;
     }
 
-    .contact-table{
-        width: 50%;
+    #contact-table{
+    width: 50%;
         font-size: 70%;
         
     }
@@ -293,7 +296,7 @@ audio {
 
     #check:checked ~ nav{
         margin-top: -12px;
-        right: 3.5rem;
+        right: 3.8rem;
 
     }
 
@@ -314,13 +317,13 @@ audio {
         font-size: 12px;
     }
 
-    .contact-table{
-        font-size: 50%;
+    #contact-table{
+    font-size: 50%;
     }
 }
 
 @media (max-width: 270px) {
-    .contact-table{
-        font-size: 10%;
+    #contact-table{
+    font-size: 10%;
     }
 }
