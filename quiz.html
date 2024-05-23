@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, target-densitydpi=device-dpi">
+    <title>Aprenda mais</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="" width="40px"></a>
+            <p>Positive Message</p>
+
+        </div>
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' style='color:#2b8de2'></i>
+        </label>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="curso.html">Curso</a>
+            <a href="locadora.html">Locadora</a>
+            <a href="contato.html">Contato</a>
+            <a href="quiz.html">Quiz</a>
+        </nav>
+    </header>
+
+    <section>
+
+        <article class="margin-50px">
+
+            <h2 class="light-blue align-center">Quiz</h2>
+
+            <p class="margin-50px align-center">Preparamos questões especiais para testar as habilidades que você adquiriu:</p>
+
+            <div class="quiz-number margin-50px">
+                <p id="bg-blue">1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+            </div>             
+            
+            
+            <div class="container-quiz margin-50px">
+                <p class="light-blue">Qual é a sintaxe correta para printar “Hello World” no console em Python?</p>
+                <div class="quiz-1">
+                    <input type="radio" id="valor-1" name="questao" value="1" checked>
+                    <label for="valor-1" >console.log("Hello world")</label>
+                </div>
+                
+               <div class="quiz-2">
+                   <input type="radio" id="valor-2" name="questao" value="2">
+                   <label for="valor-2" >p("Hello world")</label> 
+               </div>
+                
+               <div class="quiz-3">
+                   <input type="radio" id="valor-3" name="questao" value="3">
+                   <label for="valor-3" >echo "Hello world"</label> 
+               </div>
+
+               <div class="quiz-4">
+                   <input type="radio" id="valor-4" name="questao" value="4">
+                   <label for="valor-4" >print("Hello world")</label> 
+                </div>
+                
+            </div>
+            
+            <div>
+                <a href="" class="button">Confirmar</a>
+            </div>
+                
+            
+
+    
+        </article>
+    </section>
+
+    <footer>Positive Message&copy; 2024 | &reg; Todos direitos reservados</footer>
+</body>
+
+</html>
