@@ -37,15 +37,14 @@ const verificarResposta = (alternativaEscolhida, numeroQuestao) => {
         adicionarAcerto()
         document.querySelector('p#quiz-' + (numeroQuestao + 1)).className += ' acerto'
 
-        console.log('Resposta correta!')
     } else {
-        console.log('Resposta incorreta!')
+        // 'Resposta incorreta!'
     }
 }
 
 const temPergunta = () => {
     if (listaQuestoes.length <= quizAtual) {
-        console.log('Fim das questoes')
+        // Fim das questoes
 
         apresentarPontuacao()
         // window.location.href = '/index.html'
@@ -63,7 +62,6 @@ const confirmarQuiz = () => {
 }
 
 const passarQuiz = () => {
-    console.log(quizAtual);
 
     removerElementos()
     quizAtual++

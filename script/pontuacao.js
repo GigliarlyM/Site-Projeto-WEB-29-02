@@ -2,7 +2,7 @@ var questoesAcertadas = 0
 
 const adicionarAcerto = () => {
     questoesAcertadas++
-    console.log(questoesAcertadas)
+    // console.log(questoesAcertadas)
     // document.querySelector('p#acertos').textContent = 'Acertos:'+ questoesAcertadas
 }
 

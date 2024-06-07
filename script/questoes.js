@@ -1,22 +1,32 @@
 const listaQuestoes = [
     {
-        pergunta: 'Qual foi o fim do governo de Getulio Vargas?',
-        resposta: '1945',
+        pergunta: 'Como mostrar no prompt, com python, a mensagem "Hello, world!"?',
+        resposta: 'print("Hello, world!")',
         alternativas: [
-            'Quando um pe de manga nasceu',
-            '1900',
-            '1945',
-            '2000'
+            '👍',
+            'console.log("Hello, world!")',
+            'print("Hello, world!")',
+            'System.out.println("Hello, world!")',
         ]
     },
     {
-        pergunta: 'Quem eh ze gostoso?',
-        resposta: 'Gigliarly',
+        pergunta: 'O que deve usar para instanciar uma lista, em Python?',
+        resposta: '[ ]',
         alternativas: [
-            'Dylan O Brier',
-            'Bolt',
-            'Micky Tason',
-            'Gigliarly'
+            '[ ]',
+            '{ }',
+            '" "',
+            '/ /'
+        ]
+    },
+    {
+        pergunta: 'Quais sao os tipos de variaveis em Python?',
+        resposta: 'String, Integer, Boolean',
+        alternativas: [
+            'String, Integer, Boolean',
+            'Trash, String, Boolean',
+            'SmallInt, varchar, text',
+            '😌, 😎, 😣'
         ]
     }
 ]

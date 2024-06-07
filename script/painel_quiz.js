@@ -15,9 +15,7 @@ for (let i = 1; i <= quantidadeQuestoes; i++) {
 }
 
 const alterarAtributo = (elemento, atributo, valor) => {
-    console.log(elemento);
     let elementAltera = document.querySelector('#'+elemento)
-    console.log(elementAltera);
 
     if (elementAltera) {
         elementAltera.setAttribute(atributo, valor)
