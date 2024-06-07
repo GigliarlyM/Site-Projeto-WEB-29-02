@@ -1,7 +1,10 @@
 // preparar o espaco para o quiz
 const divContainer = document.querySelector('div#container')
 const NOME_ID = 'quiz-'
+const btnConfirma = document.querySelector('#btn-confirma')
 let quizAtual = 0
+
+btnConfirma.addEventListener('click', () => {confirmarQuiz()})
 
 const adicionarElementos = (quiz = quizAtual) => {
     let pPergunta = document.createElement('p')
@@ -31,11 +34,10 @@ const removerElementos = () => {
 
 const verificarResposta = (alternativaEscolhida, numeroQuestao) => {
     if (alternativaEscolhida == listaQuestoes[quizAtual].resposta) {
-
+        adicionarAcerto()
         document.querySelector('p#quiz-' + (numeroQuestao + 1)).className += ' acerto'
 
         console.log('Resposta correta!')
-        passarQuiz()
     } else {
         console.log('Resposta incorreta!')
     }
@@ -44,13 +46,20 @@ const verificarResposta = (alternativaEscolhida, numeroQuestao) => {
 const temPergunta = () => {
     if (listaQuestoes.length <= quizAtual) {
         console.log('Fim das questoes')
+        
+        apresentarPontuacao()
         // window.location.href = '/index.html'
-        window.location.replace('/index.html')
+        // window.location.replace('/index.html')
 
         return false
     } else {
         return true
     }
+}
+
+const confirmarQuiz = () => {
+    // clearTimeout( setTimeout(() => {}, 5000) )
+    passarQuiz()
 }
 
 const passarQuiz = () => {

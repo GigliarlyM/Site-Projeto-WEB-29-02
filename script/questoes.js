@@ -20,3 +20,5 @@ const listaQuestoes = [
         ]
     }
 ]
+
+const quantidadeQuestoes = listaQuestoes.length
