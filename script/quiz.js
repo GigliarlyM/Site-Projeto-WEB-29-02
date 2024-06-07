@@ -4,7 +4,7 @@ const NOME_ID = 'quiz-'
 const btnConfirma = document.querySelector('#btn-confirma')
 let quizAtual = 0
 
-btnConfirma.addEventListener('click', () => {confirmarQuiz()})
+btnConfirma.addEventListener('click', () => { confirmarQuiz() })
 
 const adicionarElementos = (quiz = quizAtual) => {
     let pPergunta = document.createElement('p')
@@ -46,7 +46,7 @@ const verificarResposta = (alternativaEscolhida, numeroQuestao) => {
 const temPergunta = () => {
     if (listaQuestoes.length <= quizAtual) {
         console.log('Fim das questoes')
-        
+
         apresentarPontuacao()
         // window.location.href = '/index.html'
         // window.location.replace('/index.html')
@@ -64,11 +64,27 @@ const confirmarQuiz = () => {
 
 const passarQuiz = () => {
     console.log(quizAtual);
+
     removerElementos()
     quizAtual++
+
     if (temPergunta()) {
         adicionarElementos()
-    }
+
+        alterarAtributo(
+            listaElemNumeroQuestoes[quizAtual - 1],
+            "class",
+            " "
+        )
+
+        alterarAtributo(
+            listaElemNumeroQuestoes[quizAtual],
+            "class",
+            "bg-yellow"
+        )
+
+    } 
+
 }
 
 
