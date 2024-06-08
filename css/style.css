@@ -112,9 +112,18 @@ nav a:active{
 
 
 .tabela1 {
-    display: table;
-    margin: 70px auto;
+    display:flex;
+    margin: 70px;
+    margin-left: 25%;
     text-align: center;
+}
+
+.align{
+    margin: 0;
+    padding-right: 20%;
+    text-align: justify;
+    margin-left: 10px;
+    
 }
 
 .brown {
