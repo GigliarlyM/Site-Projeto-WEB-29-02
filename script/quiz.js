@@ -42,19 +42,7 @@ const verificarResposta = (alternativaEscolhida, numeroQuestao) => {
     }
 }
 
-const temPergunta = () => {
-    if (listaQuestoes.length <= quizAtual) {
-        // Fim das questoes
-
-        apresentarPontuacao()
-        // window.location.href = '/index.html'
-        // window.location.replace('/index.html')
-
-        return false
-    } else {
-        return true
-    }
-}
+const temPergunta = () => listaQuestoes.length > quizAtual
 
 const confirmarQuiz = () => {
     // clearTimeout( setTimeout(() => {}, 5000) )
@@ -81,7 +69,14 @@ const passarQuiz = () => {
             "bg-yellow"
         )
 
-    } 
+    } else {
+        alterarAtributo(
+            listaElemNumeroQuestoes[quizAtual - 1],
+            "class",
+            " "
+        )
+        divContainer.appendChild(parabenizar())
+    }
 
 }
 
