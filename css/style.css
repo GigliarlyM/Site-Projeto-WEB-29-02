@@ -253,8 +253,58 @@ audio {
     background-color: orange !important;
 }
 
+
+.slider{
+    position: relative;
+    width: 55%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider img{
+    width: 100%;
+    display: none;
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    border-width: 0px;
+    margin: 5px;
+    background-color: rgba(78, 76, 76, 0.932);
+    color: rgb(111, 178, 236);
+    cursor: pointer;
+}
+
+.prev{
+    left: 0;
+}
+
+.next{
+    right: 0;
+}
+
+@keyframes fade {
+    from {opacity: .3}
+    to {opacity: 1;}
+}
+
+
+
 @media (max-width:960px) {
     
+    .slider{
+        width: 80%;
+    }
+
     .icons{
         display: block;
         margin-right: 30px;
@@ -307,6 +357,7 @@ audio {
     iframe {
         width: 90%;
     }
+
 
     .image {
         width: 100%;
