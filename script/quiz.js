@@ -9,7 +9,7 @@ const adicionarElementos = (quiz = quizAtual) => {
     let pPergunta = document.createElement('p')
     pPergunta.className = 'light-blue'
     pPergunta.id = 'pergunta'
-    pPergunta.textContent = listaQuestoes[quiz].pergunta
+    pPergunta.innerHTML = listaQuestoes[quiz].pergunta
     divContainer.appendChild(pPergunta)
 
     listaQuestoes[quiz].alternativas.forEach(alternativa => {
