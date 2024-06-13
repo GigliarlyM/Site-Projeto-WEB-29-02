@@ -11,7 +11,7 @@ function initializeSlider() {
 
         setInterval(() => {
            nextSlide()
-        }, 5000)
+        }, 3500)
     }
 }
 
