@@ -43,11 +43,15 @@ const verificarResposta = (alternativaEscolhida, numeroQuestao) => {
             document.querySelector('p#quiz-' + (numeroQuestao + 1)).className += ' erro'
         }
 
-        setTimeout(() => passarQuiz(), 3000)
+        estreitarQuiz()
     }
 }
 
 const temPergunta = () => listaQuestoes.length > quizAtual
+
+async function estreitarQuiz () {
+    await setTimeout(() => passarQuiz(), 3000)
+}
 
 const passarQuiz = () => {
 
