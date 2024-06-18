@@ -3,14 +3,13 @@ const divContainer = document.querySelector('div#container')
 const NOME_ID = 'quiz-'
 const btnConfirma = document.querySelector('#btn-confirma')
 let quizAtual = 0
-
-btnConfirma.addEventListener('click', () => { confirmarQuiz() })
+let respondidas = 0
 
 const adicionarElementos = (quiz = quizAtual) => {
     let pPergunta = document.createElement('p')
     pPergunta.className = 'light-blue'
     pPergunta.id = 'pergunta'
-    pPergunta.textContent = listaQuestoes[quiz].pergunta
+    pPergunta.innerHTML = listaQuestoes[quiz].pergunta
     divContainer.appendChild(pPergunta)
 
     listaQuestoes[quiz].alternativas.forEach(alternativa => {
@@ -33,20 +32,25 @@ const removerElementos = () => {
 }
 
 const verificarResposta = (alternativaEscolhida, numeroQuestao) => {
-    if (alternativaEscolhida == listaQuestoes[quizAtual].resposta) {
-        adicionarAcerto()
-        document.querySelector('p#quiz-' + (numeroQuestao + 1)).className += ' acerto'
 
-    } else {
-        // 'Resposta incorreta!'
+    if (respondidas == quizAtual) {
+        respondidas++
+        if (alternativaEscolhida == listaQuestoes[quizAtual].resposta) {
+            adicionarAcerto()
+            document.querySelector('p#quiz-' + (numeroQuestao + 1)).className += ' acerto'
+
+        } else {
+            document.querySelector('p#quiz-' + (numeroQuestao + 1)).className += ' erro'
+        }
+
+        estreitarQuiz()
     }
 }
 
 const temPergunta = () => listaQuestoes.length > quizAtual
 
-const confirmarQuiz = () => {
-    // clearTimeout( setTimeout(() => {}, 5000) )
-    passarQuiz()
+async function estreitarQuiz () {
+    await setTimeout(() => passarQuiz(), 3000)
 }
 
 const passarQuiz = () => {
