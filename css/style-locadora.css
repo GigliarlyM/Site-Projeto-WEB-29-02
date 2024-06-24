@@ -1,0 +1,60 @@
+.locadora-layout{
+    display: flex;
+    width: 100%;
+    gap: 12%;
+    justify-content: center;
+    align-items: center;
+}
+
+.locadora-text-image{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: justify;
+   gap: 15px;
+   border-radius: 20px;
+   width: 70%;
+   margin: auto;
+}
+
+
+.opcao-container{
+    width: 41%;
+    height: auto;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(105, 101, 101, 0.342);
+    transition: 1s;
+    
+}
+
+.opcao-container:hover{
+    transition: .5s;
+    cursor: default;
+}
+
+.bg-blue:hover{
+    background-color: rgba(33, 66, 128, 0.295);
+}
+
+.bg-yellow:hover{
+    background-color: rgba(112, 110, 21, 0.295);
+}
+
+.bg-green:hover{
+    background-color: rgba(27, 131, 41, 0.295);
+}
+
+.bg-red:hover{
+    background-color: rgba(128, 46, 25, 0.295);
+}
+
+.bg-pink:hover{
+    background-color: rgba(153, 44, 117, 0.295);
+}
+
+.margin-12{
+    margin-bottom: 12%;
+}
+

@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-locadora.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
@@ -39,167 +40,132 @@
         </nav>
     </header>
 
-    <section>
-        <article class="margin-50px align-center">
+    <section class="margin-50px align-center">
 
-            <h2 class="light-blue">Introdução da locadora</h2>
+        <h2 class="light-blue">Introdução da locadora</h2>
 
-            <h3 class="margin-50px">Agora você vai aprender como estruturamos nossa locadora:</h3>
+        <h1 class="margin-50px">Agora você vai aprender como estruturamos nossa locadora:</h1>
 
-            <div class="layout-text-image bg-flex-blue">
-             
-                    <img class="image" src="img/inicio.png" width="400px" height="280px" alt="inicio image">
-              
-                <p>Começamos definindo uma variável <span class="red">opção</span> valor 1, ela será
-                    necessária para o funcionamento <span class="green">While</span>.
-                    <br> <br>
-                    Criamos também uma lista chamada <span class="lista">listaFilme</span> é nela que nossos filmes
-                    serão armazenados.
-                    <br> <br>
-                    Observe o <span class="green">While</span>, enquanto a variável <span class="red">opção</span> for
-                    diferente de 5, nosso programa continuará executando, contudo, se digitado o número 5, saímos do
-                    programa.
-                    <br> <br>
-                    Printamos nosso menu (\n serve para pular a linha).
-                    <br>
-                    Variável <span class="red">opção</span> recebe um <span class="green">input(entrada)</span>, o
-                    usuário precisa informar algum valor numérico.
-                </p>
-            </div>
-        </article>
+        <div class="locadora-text-image">
+            <br>
 
+            <img class="image" src="img/inicio.png" width="90%" height="220px" alt="inicio image">
+
+            <p>Começamos definindo uma variável <span class="red">opção</span> valor 1, ela será
+                necessária para o funcionamento <span class="green">While</span>.
+                <br> <br>
+                Criamos também uma lista chamada <span class="lista">listaFilmes</span> é nela que nossos filmes
+                serão armazenados.
+                <br> <br>
+                Observe o <span class="green">While</span>, enquanto a variável <span class="red">opção</span> for
+                diferente de 5, nosso programa continuará executando, contudo, se digitado o número 5, saímos do
+                programa.
+                <br> <br>
+                Variável <span class="red">opção</span> recebe um <span class="green">input(entrada)</span>, o
+                usuário precisa informar algum valor numérico.
+            </p>
+        </div>
     </section>
 
 
-
-    <section>
-        <article class="margin-80px align-center">
-            <h2 class="light-blue ">Funcionalidades</h2>
-            <p>Vamos falar também sobre as funcionalidades do nosso programa:</p>
-
-            <h3 class="light-blue ">Opção 1</h3>
-            <h4 class="dark-blue">lista todos os filmes encontrados na lista</h4>
-            
-        </article>
-        
-        
-        <article class="container-flex">
-
-            <div class="align-center bg-flex-blue">
-                <img class="image" width="400px" src="img/opção1.png" alt="image opcao1">
-                <p>Criamos um <span class="for">for</span> e ele é responsável por trazer todos os itens colocados na
-                    <span class="orange">listaFilmes</span>, logo ápos, printamos os filmes.
-                </p>
-            </div>
-
-            
-        <div class="bg-flex-blue">
-
-            <img src="img/opção2.png" class="image" width="400px" alt="image opcao2">
-            
-            <p class="align-center">A variável <span class="orange">novofilme</span> recebe um filme digitado pelo usuário.
-                A funcionalidade <span class="yellow"> .append(),</span> adiciona o elemento na lista.
-                <br>
-            </p>
-            
-            
-        </div>
     
+    <section class="margin-80px align-center">
+        <h1 class="light-blue ">Funcionalidades</h1>
 
-        </article>
-      
+        <p>Vamos falar também sobre as funcionalidades do nosso programa:</p>
+
+    </section>
+
+    <article class="locadora-layout margin-12 ">
+
+        <div class="opcao-container bg-blue">
+
+            <h3 class="light-blue">Opção 1</h3>
+            <h4 class="dark-blue">lista todos os filmes encontrados na lista</h4>
+
+            <img class="image" width="90%" src="img/opção1.png" alt="image opcao1">
+
+            <p>Criamos um <span class="for">for</span> e ele é responsável por trazer todos os itens colocados na
+                <span class="orange">listaFilmes</span>, logo ápos, printamos os filmes.
+            </p>
+        </div>
 
 
-   
-
-
-        <article class="margin-80px align-center">
+        <div class="opcao-container bg-yellow">
             <h3 class="light-blue">Opção2</h3>
             <h4 class="dark-blue">Adiciona um novo filme na lista</h4>
 
-         
-        </article>
+            <img src="img/opção2.png" class="image" width="90%" alt="image opcao2">
+
+            <p class="align-center">A variável <span class="orange">novofilme</span> recebe um filme digitado pelo
+                usuário.
+                A funcionalidade <span class="yellow"> .append(),</span> adiciona o elemento na lista.
+                <br>
+            </p>
+        </div>
+
+    </article>
 
 
 
-        <article class="margin-80px align-center">
+    <article class="locadora-layout margin-12">
+        <div class="opcao-container bg-green">
+
             <h3 class="light-blue">Opção 3</h3>
             <h4 class="dark-blue">Remove um filme da lista</h4>
 
-            <div class="">
-                <div>
-                    <img src="img/opção3.png" class="image" width="400px" alt="image opcao3">
-                </div>
-
-                <p>A variável <span class="orange">removerFilme</span> recebe o nome de um filme digitado
-                    pelo usuário.
-                    <br>
-                    É verificado se existe o filme na lista, para então removê-lo e printar uma mensagem.
-                    <br>
-                    Se não existir o filme digitado, uma mensagem de aviso é exibida.
-                </p>
-            </div>
-        </article>
+            <img src="img/opção3.png" class="image" width="90%" alt="image opcao3">
 
 
-        <article class="margin-80px align-center">
+            <p>A variável <span class="orange">removerFilme</span> recebe o nome de um filme digitado
+                pelo usuário, para então removê-lo e printar uma mensagem.
+            </p>
+
+        </div>
+
+        <div class="opcao-container bg-red">
 
             <h3 class="light-blue">Opção 4</h3>
             <h4 class="dark-blue">Pesquisa um filme na lista</h4>
 
-            <div>
-                <div>
-                    <img src="img/opção4.png" class="image" width="400px" alt="image opcao4">
-
-                </div>
-
-                <p>A variável <span class="orange">pesquisarFilmes</span> recebe o nome de um filme
-                    digitado pelo usuário.
-                    <br>
-                    É verificado se o filme pesquisado consta na lista, para exibí-lo.
-                    <br>
-                    Se o filme pesquisado não for encontrado, uma mensagem de aviso é exibida.
-                </p>
-            </div>
-        </article>
+            <img src="img/opção4.png" class="image" width="90%" alt="image opcao4">
 
 
-        <article class="margin-80px align-center">
+
+            <p>A variável <span class="orange">pesquisarFilmes</span> recebe o nome de um filme
+                digitado pelo usuário. É verificado se o filme pesquisado consta na lista, para exibí-lo.
+        </div>
+    </article>
+
+
+    <article class="locadora-layout">
+
+        <div class="opcao-container bg-pink">
             <h3 class="light-blue">Opção 5</h3>
             <h4 class="dark-blue">O programa é finalizado</h4>
 
-            <div>
-                <div>
-                    <img src="img/opção5.png" class="image" width="400px" alt="image opcao5">
+            <img src="img/opcao5.png" class="image" width="90%" height="90px" alt="image opcao5">
 
-                </div>
-
-                <p>Ao digitar o número 5, o <span class="green">while</span> é interrompido e o programa é
-                    finalizado com
-                    uma
-                    mensagem.</p>
-            </div>
-        </article>
+            <p>Ao digitar o número 5, o <span class="green">while</span> é interrompido e o programa é
+                finalizado com uma mensagem.</p>
+        </div>
 
 
-        <article class="margin-80px align-center">
+        <div class="opcao-container bg-blue">
             <h3 class="light-blue">Exceção</h3>
 
-            <div>
-                <div>
-                    <img src="img/exceção.png" class="image" width="400px" alt="excecao image">
+            <img src="img/exceção.png" class="image" width="90%" alt="excecao image">
 
-                </div>
+            <p>Se um número digitado pelo usuario não estiver dentre as opções fornecidas pelo
+                programa uma mensagem de
+                aviso é exibida.
+            </p>
+        </div>
+
+    </article>
 
 
-                <p>Se um número digitado pelo usuario não estiver dentre as opções fornecidas pelo
-                    programa uma mensagem de
-                    aviso é exibida.
-                </p>
-            </div>
-        </article>
 
-    </section>
 
     <section>
         <p class="align-center margin-top-80px">Veja nossos contatos:</p>
@@ -208,6 +174,8 @@
 
 
     <footer>Positive Message&copy; 2024 | &reg; Todos direitos reservados</footer>
+
+    <script src="script/locadora.js"></script>
 
 </body>
 
