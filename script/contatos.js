@@ -1,6 +1,8 @@
 const ratingEl = document.querySelector('.star-rating');
 let count = 1;
 document.getElementById("radio1").checked = true;
+let btn = document.getElementById('btn-form')
+let avaliacao = 0
 
 setInterval(function () {
     nextImage();
@@ -15,13 +17,10 @@ function nextImage() {
     document.getElementById("radio" + count).checked = true;
 }
 
-let btn = document.getElementById('btn-form')
-
 btn.onclick = function () {
     let nome = document.getElementById('inputName').value
     let email = document.getElementById('inputEmail').value
-    let nota = document.querySelector("input[name='avaliacao']:checked").value
-
+    let nota = avaliacao
 
     alert(`Sua avaliação ajuda a melhorar nossos serviços, obrigado!
     \nSua avaliação: \nNome: ${nome}\nEmail: ${email}\nNota: ${nota}`)
@@ -32,6 +31,7 @@ btn.onclick = function () {
 ratingEl.addEventListener('click', (event) => {
     const selectedStar = event.target.closest('li');
     const rating = selectedStar.dataset.value;
+    avaliacao = rating
 
     updateStarRating(rating);
 });
