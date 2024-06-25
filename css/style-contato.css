@@ -33,24 +33,24 @@
     align-items: center;
 }
 
-#radio1:checked ~ .first {
+#radio1:checked~.first {
     margin-left: 40%;
 }
 
-#radio2:checked ~ .first {
+#radio2:checked~.first {
     margin-left: 20%;
-    
+
 }
 
-#radio3:checked ~ .first {
+#radio3:checked~.first {
     margin-left: 0%;
 }
 
-#radio4:checked ~ .first {
+#radio4:checked~.first {
     margin-left: -20%;
 }
 
-#radio5:checked ~ .first {
+#radio5:checked~.first {
     margin-left: -40%;
 }
 
@@ -74,11 +74,11 @@
     margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1,
-#radio2:checked ~ .navigation-auto .auto-btn2,
-#radio3:checked ~ .navigation-auto .auto-btn3,
-#radio4:checked ~ .navigation-auto .auto-btn4,
-#radio5:checked ~ .navigation-auto .auto-btn5 {
+#radio1:checked~.navigation-auto .auto-btn1,
+#radio2:checked~.navigation-auto .auto-btn2,
+#radio3:checked~.navigation-auto .auto-btn3,
+#radio4:checked~.navigation-auto .auto-btn4,
+#radio5:checked~.navigation-auto .auto-btn5 {
     background-color: white;
 }
 
@@ -151,6 +151,8 @@
     color: gold;
 }
 
+/* Configuracao do formulario */
+
 .form {
     display: flex;
     align-items: center;
@@ -163,24 +165,23 @@ form {
     margin: 0 !important;
     border-radius: 30px;
     padding: 40px;
+    width: fit-content;
 }
 
 .form input.inptBig {
     padding: 8px 10px;
     border-radius: 10px;
-    border: 0px solid ;
+    border: 0px solid;
     box-shadow: none;
     margin: 5px;
     background-color: #606080;
     color: rgb(255, 255, 255);
+    font-size: medium;
+    width: 250px;
 }
 
 input.inptBig::placeholder {
     color: rgb(255, 255, 255);
-}
-
-.form .estrela {
-    margin: 0px 10px;
 }
 
 .form button.button {
@@ -188,3 +189,31 @@ input.inptBig::placeholder {
     border: 0px solid;
     box-shadow: none;
 }
+
+/* Configuracao das estrelas */
+
+.star-rating {
+    display: flex;
+    background-color: #cccccc21;
+    border-radius: 20px;
+    width: min-content;
+    padding-left: 0;
+}
+
+.star-rating li {
+    list-style: none;
+    margin-right: 5px;
+    padding: 0px 20px;
+}
+
+.star-rating img {
+    width: 30px;
+}
+
+.star-rating li:hover img {
+    cursor: pointer;
+}
+
+/* .star-rating li.selected img {
+    background-color: #ff0000;
+} */

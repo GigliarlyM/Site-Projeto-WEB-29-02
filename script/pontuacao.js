@@ -4,12 +4,14 @@ const adicionarAcerto = () => {
     questoesAcertadas++
     // console.log(questoesAcertadas)
     // document.querySelector('p#acertos').textContent = 'Acertos:'+ questoesAcertadas
+
+    return questoesAcertadas
 }
 
-const calcularPontosPorcentagem = () => {
-    console.log('Acertos: '+ questoesAcertadas + ', quantidade de questoes: '+ quantidadeQuestoes)
+const calcularPontosPorcentagem = (questAcert = questoesAcertadas, quantQuest = quantidadeQuestoes) => {
+    console.log('Acertos: '+ questAcert + ', quantidade de questoes: '+ quantQuest)
 
-    return questoesAcertadas / quantidadeQuestoes
+    return questAcert / quantQuest
 }
 
 const parabenizar = () => {
@@ -20,3 +22,5 @@ const parabenizar = () => {
 
     return h2Parabens
 }
+
+module.exports = { adicionarAcerto, calcularPontosPorcentagem, parabenizar }

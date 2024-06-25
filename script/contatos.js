@@ -1,13 +1,14 @@
+const ratingEl = document.querySelector('.star-rating');
 let count = 1;
 document.getElementById("radio1").checked = true;
 
-setInterval(function() {
+setInterval(function () {
     nextImage();
 }, 1500)
 
 function nextImage() {
     count++;
-    if(count > 5) {
+    if (count > 5) {
         count = 1;
     }
 
@@ -16,12 +17,36 @@ function nextImage() {
 
 let btn = document.getElementById('btn-form')
 
-btn.onclick = function() {
+btn.onclick = function () {
     let nome = document.getElementById('inputName').value
     let email = document.getElementById('inputEmail').value
-    let nota =  document.querySelector("input[name='avaliacao']:checked").value
+    let nota = document.querySelector("input[name='avaliacao']:checked").value
 
 
     alert(`Sua avaliação ajuda a melhorar nossos serviços, obrigado!
     \nSua avaliação: \nNome: ${nome}\nEmail: ${email}\nNota: ${nota}`)
+}
+
+// configuracao das estrelas
+
+ratingEl.addEventListener('click', (event) => {
+    const selectedStar = event.target.closest('li');
+    const rating = selectedStar.dataset.value;
+
+    updateStarRating(rating);
+});
+
+function updateStarRating(rating) {
+    const stars = ratingEl.querySelectorAll('li');
+    const imgs = ratingEl.querySelectorAll('img')
+
+    for (let i = 0; i < stars.length; i++) {
+        // const star = stars[i];
+        // star.classList.toggle('selected', i < rating);
+        const img = imgs[i]
+        img.src = "../icon/ic_star_full-32.png"
+        if (i >= rating){
+            img.src = "../icon/ic_star-32.png"
+        }
+    }
 }

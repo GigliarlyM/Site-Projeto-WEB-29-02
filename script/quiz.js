@@ -1,20 +1,19 @@
 // preparar o espaco para o quiz
 const divContainer = document.querySelector('div#container')
 const NOME_ID = 'quiz-'
-const btnConfirma = document.querySelector('#btn-confirma')
 let quizAtual = 0
 let respondidas = 0
 
-const adicionarElementos = (quiz = quizAtual) => {
+const adicionarElementos = (quiz = quizAtual, listaQuest = listaQuestoes) => {
     let pPergunta = document.createElement('p')
     pPergunta.className = 'light-blue'
     pPergunta.id = 'pergunta'
-    pPergunta.innerHTML = listaQuestoes[quiz].pergunta
+    pPergunta.innerHTML = listaQuest[quiz].pergunta
     divContainer.appendChild(pPergunta)
 
-    listaQuestoes[quiz].alternativas.forEach(alternativa => {
+    listaQuest[quiz].alternativas.forEach(alternativa => {
         let pAlternativa = document.createElement('p')
-        let numeroQuestao = listaQuestoes[quiz].alternativas.indexOf(alternativa)
+        let numeroQuestao = listaQuest[quiz].alternativas.indexOf(alternativa)
 
         pAlternativa.className = 'alternativa quiz-' + (numeroQuestao + 1)
         pAlternativa.id = NOME_ID + (numeroQuestao + 1)
@@ -31,11 +30,11 @@ const removerElementos = () => {
     divContainer.innerHTML = ''
 }
 
-const verificarResposta = (alternativaEscolhida, numeroQuestao) => {
+const verificarResposta = (alternativaEscolhida, numeroQuestao, listaQuest = listaQuestoes) => {
 
     if (respondidas == quizAtual) {
         respondidas++
-        if (alternativaEscolhida == listaQuestoes[quizAtual].resposta) {
+        if (alternativaEscolhida == listaQuest[quizAtual].resposta) {
             adicionarAcerto()
             document.querySelector('p#quiz-' + (numeroQuestao + 1)).className += ' acerto'
 
@@ -46,12 +45,12 @@ const verificarResposta = (alternativaEscolhida, numeroQuestao) => {
         estreitarQuiz()
     }
 }
-
-const temPergunta = () => listaQuestoes.length > quizAtual
-
-async function estreitarQuiz () {
+async function estreitarQuiz() {
     await setTimeout(() => passarQuiz(), 3000)
 }
+
+
+const temPergunta = (tamQuest = listaQuestoes.length, questAtual = quizAtual) => tamQuest > questAtual
 
 const passarQuiz = () => {
 
@@ -83,5 +82,3 @@ const passarQuiz = () => {
     }
 
 }
-
-
