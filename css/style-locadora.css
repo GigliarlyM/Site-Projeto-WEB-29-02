@@ -32,26 +32,26 @@
 .opcao-container:hover{
     transition: .5s;
     cursor: default;
-}
-
-.bg-blue:hover{
     background-color: rgba(33, 66, 128, 0.295);
 }
 
-.bg-yellow:hover{
-    background-color: rgba(112, 110, 21, 0.295);
+.color-code{
+   color: rgb(75, 117, 255);
 }
 
-.bg-green:hover{
-    background-color: rgba(27, 131, 41, 0.295);
+.color-while{
+    color: rgb(211, 114, 214);
 }
 
-.bg-red:hover{
-    background-color: rgba(128, 46, 25, 0.295);
+.print-color{
+    color: rgb(214, 203, 98);
 }
 
-.bg-pink:hover{
-    background-color: rgba(153, 44, 117, 0.295);
+.code{
+    background-color: rgba(105, 101, 101, 0.342);
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .margin-12{
