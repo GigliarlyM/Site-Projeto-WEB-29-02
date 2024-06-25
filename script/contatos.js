@@ -44,9 +44,9 @@ function updateStarRating(rating) {
         // const star = stars[i];
         // star.classList.toggle('selected', i < rating);
         const img = imgs[i]
-        img.src = "../icon/ic_star_full-32.png"
+        img.src = "./icon/ic_star_full-32.png"
         if (i >= rating){
-            img.src = "../icon/ic_star-32.png"
+            img.src = "./icon/ic_star-32.png"
         }
     }
 }
