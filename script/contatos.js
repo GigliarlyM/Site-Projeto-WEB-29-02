@@ -23,8 +23,9 @@ btn.onclick = function () {
     let nota = avaliacao
 
     alert(`Sua avaliação ajuda a melhorar nossos serviços, obrigado!
-    \nSua avaliação: \nNome: ${nome}\nEmail: ${email}\nNota: ${nota}`)
+    \nSua avaliação: \nNome: ${nome.toUpperCase()}\nEmail: ${email}\nNota: ${nota}`)
 }
+
 
 // configuracao das estrelas
 
