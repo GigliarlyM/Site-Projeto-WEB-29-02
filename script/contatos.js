@@ -40,7 +40,7 @@ ratingEl.addEventListener('click', (event) => {
 function updateStarRating(rating) {
     const imgs = ratingEl.querySelectorAll('img')
 
-    for (let i = 0; i < stars.length; i++) {
+    for (let i = 0; i < imgs.length; i++) {
         const img = imgs[i]
         img.src = "./icon/ic_star_full-32.png"
         if (i >= rating){
