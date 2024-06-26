@@ -38,12 +38,9 @@ ratingEl.addEventListener('click', (event) => {
 });
 
 function updateStarRating(rating) {
-    const stars = ratingEl.querySelectorAll('li');
     const imgs = ratingEl.querySelectorAll('img')
 
     for (let i = 0; i < stars.length; i++) {
-        // const star = stars[i];
-        // star.classList.toggle('selected', i < rating);
         const img = imgs[i]
         img.src = "./icon/ic_star_full-32.png"
         if (i >= rating){
